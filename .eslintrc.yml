@@ -1,0 +1,17 @@
+env:
+  es6: true
+  node: true
+
+plugins: babel
+
+extends: 'airbnb-base'
+
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+
+parser: babel-eslint
+
+rules:
+  no-console: 0
+  import/extensions: 0
