@@ -14,7 +14,11 @@ jobs:
     steps:
 
       - uses: actions/checkout@v2
-        
+
+      - name: Install dependencies
+        run: |
+          npm install --save-dev eslint-config-airbnb-base eslint-plugin-import
+          
       - name: Run linter
         run: |
           make lint
